@@ -3,7 +3,7 @@
  * TOP API: taobao.widget.loginstatus.get request
  * 
  * @author auto create
- * @since 1.0, 2013-07-19 16:45:35
+ * @since 1.0, 2013-07-25 16:49:24
  */
 class WidgetLoginstatusGetRequest
 {

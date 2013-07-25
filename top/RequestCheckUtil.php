@@ -1,13 +1,13 @@
 <?php
 /**
- * APIå…¥å‚é™æ€æ£€æŸ¥ç±»
- * å¯ä»¥å¯¹APIçš„å‚æ•°ç±»åž‹ã€é•¿åº¦ã€æœ€å¤§å€¼ç­‰è¿›è¡Œæ ¡éªŒ
+ * APIÈë²Î¾²Ì¬¼ì²éÀà
+ * ¿ÉÒÔ¶ÔAPIµÄ²ÎÊýÀàÐÍ¡¢³¤¶È¡¢×î´óÖµµÈ½øÐÐÐ£Ñé
  *
  **/
 class RequestCheckUtil
 {
 	/**
-	 * æ ¡éªŒå­—æ®µ fieldName çš„å€¼$valueéžç©º
+	 * Ð£Ñé×Ö¶Î fieldName µÄÖµ$value·Ç¿Õ
 	 *
 	 **/
 	public static function checkNotNull($value,$fieldName) {
@@ -18,7 +18,7 @@ class RequestCheckUtil
 	}
 
 	/**
-	 * æ£€éªŒå­—æ®µfieldNameçš„å€¼value çš„é•¿åº¦
+	 * ¼ìÑé×Ö¶ÎfieldNameµÄÖµvalue µÄ³¤¶È
 	 *
 	 **/
 	public static function checkMaxLength($value,$maxLength,$fieldName){		
@@ -28,7 +28,7 @@ class RequestCheckUtil
 	}
 
 	/**
-	 * æ£€éªŒå­—æ®µfieldNameçš„å€¼valueçš„æœ€å¤§åˆ—è¡¨é•¿åº¦
+	 * ¼ìÑé×Ö¶ÎfieldNameµÄÖµvalueµÄ×î´óÁÐ±í³¤¶È
 	 *
 	 **/
 	public static function checkMaxListSize($value,$maxSize,$fieldName) {	
@@ -43,7 +43,7 @@ class RequestCheckUtil
 	}
 
 	/**
-	 * æ£€éªŒå­—æ®µfieldNameçš„å€¼value çš„æœ€å¤§å€¼
+	 * ¼ìÑé×Ö¶ÎfieldNameµÄÖµvalue µÄ×î´óÖµ
 	 *
 	 **/
 	public static function checkMaxValue($value,$maxValue,$fieldName){	
@@ -59,7 +59,7 @@ class RequestCheckUtil
 	}
 
 	/**
-	 * æ£€éªŒå­—æ®µfieldNameçš„å€¼value çš„æœ€å°å€¼
+	 * ¼ìÑé×Ö¶ÎfieldNameµÄÖµvalue µÄ×îÐ¡Öµ
 	 *
 	 **/
 	public static function checkMinValue($value,$minValue,$fieldName) {
@@ -75,7 +75,7 @@ class RequestCheckUtil
 	}
 
 	/**
-	 * æ£€éªŒå­—æ®µfieldNameçš„å€¼valueæ˜¯å¦æ˜¯number
+	 * ¼ìÑé×Ö¶ÎfieldNameµÄÖµvalueÊÇ·ñÊÇnumber
 	 *
 	 **/
 	protected static function checkNumeric($value,$fieldName) {
@@ -84,7 +84,7 @@ class RequestCheckUtil
 	}
 
 	/**
-	 * æ ¡éªŒ$valueæ˜¯å¦éžç©º
+	 * Ð£Ñé$valueÊÇ·ñ·Ç¿Õ
 	 *  if not set ,return true;
 	 *	if is null , return true;
 	 *	
